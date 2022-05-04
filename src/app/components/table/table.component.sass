@@ -1,0 +1,108 @@
+p
+  display: flex
+  align-items: center
+  margin: 0 12px 0 0
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  color: #555555
+  vertical-align: middle
+
+input
+  height: 36px
+  width: 288px
+  background: #FFFFFF
+  border: 1px solid #DFDFDF
+  border-radius: 6px
+  text-indent: 33px
+
+@media (max-width: 390px)
+  input
+    width: 200px
+
+.icon-position
+  position: relative
+  width: 288px
+
+  svg
+    position: absolute
+    left: 14px
+    top: 9px
+    width: 13px
+
+input::placeholder
+  font-weight: 400
+  font-size: 12px
+  color: #9B9B9B
+
+.add
+  display: flex
+  height: 36px
+  width: 147px
+  align-items: center
+  border: 0
+  border-radius: 7px
+  background-color: #273F70
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05)
+
+  svg
+    margin-left: 10px
+
+  p
+    font-weight: bold
+    font-size: 14px
+    color: #FFFFFF
+    margin: 0 0 0 10px
+    line-height: 15px
+
+.input-container
+  margin-bottom: 16px
+
+.table-container
+  overflow-x: auto
+
+table
+  width: 100%
+
+// Header
+th.mat-header-cell
+  background-color: #273F70
+  font-size: 12px
+  color: #FFFFFF
+
+// Cells
+td.mat-cell, td.mat-footer-cell
+  font-size: 14px
+  color: #555555
+
+// Rows
+tr.mat-row
+  height: 48px
+
+// Header height
+tr.mat-header-row
+  height: 44px
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell
+  border-bottom-color: #DFDFDF
+  border-bottom-width: 1.5px
+
+.gray
+  background-color: #FAFAFA
+
+.arrow-down
+  position: absolute
+  top: 0
+  left: 100%
+  transform: rotate(90deg)
+  margin-left: 13px
+
+.arrow-up
+  position: absolute
+  top: 2px
+  left: 100%
+  transform: rotate(270deg)
+  margin-left: 13px
+
+.hide-arrow
+  display: none

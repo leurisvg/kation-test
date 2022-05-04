@@ -1,0 +1,11 @@
+<div class="wrapper">
+	<p>{{ paginator }}</p>
+
+	<button class="prev" (click)="previousPage()">
+		<app-arrow [color]="pageIndex === 0 ? '#939fb8' : '#273F70'" [size]=12></app-arrow>
+	</button>
+
+	<button class="next" (click)="nextPage()">
+		<app-arrow [color]="pageIndex + 1 === getNumberOfPages() ? '#939fb8' : '#273F70'" [size]=12></app-arrow>
+	</button>
+</div>
